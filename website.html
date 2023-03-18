@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="wstyle.css">
+    <title>Portfolio</title>
+</head>
+
+<body> 
+    <div id="navbar_container">
+        <div id="navbar_logo" style="flex-grow: 1;">CLS.</div>
+        <div class="navbar_iconbox" onclick="navbar_side()">
+            <img src="pics/menu.svg" alt="menu" class="icons2">
+        </div>
+
+        <div class="navbar_box">
+            <a href="#about"><div class="navbar_font">ABOUT</div></a>
+        </div>
+        <div class="navbar_box">
+            <a href="#education"><div class="navbar_font">EDUCATION</div></a>
+        </div>
+        <div class="navbar_box">
+            <a href="#skills"><div class="navbar_font">SKILLS</div></a>
+        </div>
+        <div class="navbar_box">
+            <a href="#contacts"><div class="navbar_font">CONTACTS</div></a>
+        </div>
+    </div>
+
+    <div id="navbar_sidebox">    
+        <div class="navbar_sidebox_iconbox" style="margin-top: 15px; margin-left: 15px;" onclick="navbar_side()">
+            <img src="pics/close.svg" alt="close" class="icons2">
+        </div>
+        <center>
+            <a href="#about" onclick="navbar_side()"><div class="navbar_sidefont">ABOUT</div></a>
+            <a href="#education" onclick="navbar_side()"><div class="navbar_sidefont">EDUCATION</div></a>   
+            <a href="#skills" onclick="navbar_side()"><div class="navbar_sidefont">SKILLS</div></a>
+            <a href="#contacts" onclick="navbar_side()"><div class="navbar_sidefont">CONTACTS</div></a>
+        </center>
+    </div>
+
+
+    <div id="upbox">
+        <a href="#top"><img src="pics/up.svg" alt="up" class="icons"></a>
+    </div>
+    
+
+    <div style="height: 100vh;">
+        <div class="bg"></div>
+        <div style="position: absolute; top: 0;" id="top"></div>
+        <img src="pics/profilepic1.png" class="circle"> 
+        <div class="head1">Chen Ling Song</div>   
+        <p class="caption">Just a student in Singapore</p>
+    </div>
+
+
+    <div>
+        <div class="head2_line"></div>
+        <div id="about" class="head2">About</div>
+    </div>
+
+    <div class="about_container body">
+        <img src="pics/profilepic2.png" class="picture_box">
+        <div class="about_textbox">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus sit quam exercitationem voluptatem quae veritatis iusto earum pariatur nesciunt, accusantium quibusdam voluptates. Veritatis illum nisi officiis quidem, nihil at corrupti.
+            </p>
+            <div class="about_portfolio">Portfolio</div>
+        </div>
+
+    </div>
+
+
+    <div>
+        <div class="head2_line"></div>
+        <div id="education" class="head2">Education</div>
+    </div>
+
+    <div class="slideshow_overall body">
+        <div class="slideshow_arrowbox" onClick="slidesindex--; slidescount()">
+            <img src="pics/left.svg" alt="left" class="icons">
+        </div>
+        <div class="slideshow_arrowbox" onClick="slidesindex++; slidescount()" style="right: 0;">
+            <img src="pics/right.svg" alt="left" class="icons">
+        </div>
+
+        <div class="slideshow_container">
+            <div class="slideshow_box"><img src="pics/leadership.svg" alt="Subjects & Leadership" title="Subjects & Leadership" class="slideshow_icons" onclick="slides_text(1)"></div>
+            <div class="slideshow_box"><img src="pics/cca.svg" alt="CCA" title="CCA" class="slideshow_icons" onclick="slides_text(2)"></div>
+            <div class="slideshow_box"><img src="pics/volunteering.svg" alt="Volunteering" title="Volunteering" class="slideshow_icons" onclick="slides_text(3)"></div>
+            <div class="slideshow_box"><img src="pics/achievements.svg" alt="Achievements" title="Achievements" style="height: 50px; width: 50px; padding: 5px;" onclick="slides_text(4)"></div>
+        </div>
+
+        <div class="slideshow" style="opacity: 100%;">
+
+            <img src="pics/wgps.jpg" class="slideshow_pics">
+            <div style="position: absolute;">
+                <p class="slideshow_head">West Grove<br>Primary School</p>
+                <p class="slideshow_caption">2011 - 2016</p>
+            </div>
+            <div class="slideshow_textbox">
+                <p class="slideshow_text">
+                    Subjects: English | Chinese | Math | Science <br><br>
+                    PSLE: 242 <br><br>
+                    Class Assistant Monitor: 2015 - 2016
+                </p>
+                <p class="slideshow_text">
+                    Soccer: 2011 - 2012 <br><br>
+                    Taekwando: 2013 <br><br>
+                    Art Club: 2014 - 2015 <br>
+                </p>
+                <p class="slideshow_text">
+                    Art Showcase at NUH: 2015
+                </p>
+                <p class="slideshow_text">
+                    Honour's Day, 3rd in Class: 2013 <br><br>
+                    Honour's Day, 1st in Class: 2014 <br><br>
+                    ICAS Science Distinction: 2016 <br><br>
+                    Best Progress Award: 2016
+                </p>
+            </div>
+        </div>
+
+        <div class="slideshow">
+            <img src="pics/scss.jpg" class="slideshow_pics">
+            <div style="position: absolute;">
+                <p class="slideshow_head">Swiss Cottage<br>Secondary School</p>
+                <p class="slideshow_caption">2017 - 2020</p>
+            </div>
+            <div class="slideshow_textbox">
+                <p class="slideshow_text">
+                    Subjects: English | Chinese | Elementary Mathematics | Additional Mathematics | Chemistry | Physics | Pure Geography | Elective History | Social Studies <br><br>
+                    Net L1R5: 4 <br><br>
+                    Class Secretary and Treasurer: 2019 <br><br>
+                    CCA Secretary: 2019 - 2020 <br><br>
+                </p>
+                <p class="slideshow_text">
+                    Chinese Orchestra: 2017 - 2020 <br><br>
+                    Played the Erhu and performed in many school and nation-wide events. Lead Player for the Erhu 2 section. Tutored and mentored juniors the basics of Erhu.
+                </p>
+                <p class="slideshow_text">
+                    Bo Tien Day Activity Centre (Performance): 2017 <br><br>
+                    SASCO Elderly Home (Performance): 2018 <br><br>
+                    Eduplay Project (Creating toys for prechoolers): 2018 <br><br>
+                    VIA Vietnam Horizons Trip (5D4N, teaching students and renovating school): 2018 <br><br>
+                    Roxy Foundation (Performance): 2018 - 2019 <br><br>
+                    Swiss Carnival (Fund raising): 2019 <br>
+                </p>
+                <p class="slideshow_text"">
+                    ICAS Science Distinction: 2017 - 2019 <br><br>
+                    ICAS Math Distinction: 2018 - 2019 <br><br>
+                    Education Merit Award: 2017 - 2018 <br><br>
+                    Edusave Scholarship Award: 2019 <br><br>
+                    EAGLES Award: 2020 <br><br>
+                    Singapore Youth Festivals Distinction: 2019 <br><br>
+                </p>
+            </div>
+        </div>
+
+        <div class="slideshow">
+            <img src="pics/acjc.jpg" class="slideshow_pics" style="object-position: auto 80%;">
+            <div style="position: absolute;">
+                <p class="slideshow_head">Anglo-Chinese<br>Junior College</p>
+                <p class="slideshow_caption">2021 - 2022</p>
+            </div>
+            <div class="slideshow_textbox">
+                <p class="slideshow_text">
+                    Subjects: H1 General Paper | H1 Chinese | H1 Project Work | H2 Mathematics | H2 Chemistry | H2 Physics | H2 Economics <br><br>
+                    Rank Points: ?? <br><br>
+                    CCA Project Manager: 2021 - 2022 <br><br>
+                    BuildingBloCS Core Organiser: 2022
+                </p>
+                <p class="slideshow_text">
+                    Technology Council: 2021 - 2022 <br><br>
+                    Learned coding such as C++ and took part in some competitions. Embarked on individual projects such as this website.
+                </p>
+                <p class="slideshow_text">
+                    OCIP Chiang Mai (4D, teach students overseas): 2021 <br><br>
+                    BuildingBloCS (International event aimed at bringing coding to the public): 2022
+                </p>
+                <p class="slideshow_text"">
+                    Edusave Merit Award: 2021 <br><br>
+                    Canadian Coding Competition Distinction: 2022
+                </p>
+            </div>
+        </div>
+
+        <div style="position: absolute; height:50px; width:100%;">
+            <center>
+                <div class="slideshow_dot" onclick="dotsclick(1); slidescount()" style="background-color: #ffffff;"></div>
+                <div class="slideshow_dot" onclick="dotsclick(2); slidescount()"></div>
+                <div class="slideshow_dot" onclick="dotsclick(3); slidescount()"></div>
+            </center>
+        </div>
+
+    </div>
+    
+
+    <div>
+        <div class="head2_line"></div>
+        <div id="skills" class="head2">Skills</div>
+    </div>
+
+    <!-- <div class="skills_bar"><div class="skills_bar_on" style="width: 40%"></div></div> -->
+
+    <div class="skills_container body" onclick="skillsopen(1)">
+        <div class="skills_picbox">
+            <div class="skills_pictext">Code</div>
+            <div class="skills_pic_container">
+                <img src="pics/python.svg" alt="Logo" class="skills_pic">
+                <img src="pics/c++.svg" alt="Logo" class="skills_pic">
+                <img src="pics/html.svg" alt="Logo" class="skills_pic">
+                <img src="pics/css.svg" alt="Logo" class="skills_pic">
+                <img src="pics/javascript.svg" alt="Logo" class="skills_pic">
+            </div>
+            <div class="skills_bottomtext">Click to Expand</div>
+        </div>
+        <p class="skills_textbox">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi hic necessitatibus architecto, commodi nobis in! Et, sunt animi ea saepe magni magnam nam vero, laudantium tenetur a recusandae amet aperiam.
+        </p>
+    </div>
+
+    <div class="skills_picbox_active">
+        <div class="skills_pictext_active">Code Proficiency</div>
+        <div class="skills_pic_active_container">
+            <div class="skills_code_box">
+                <img src="pics/python.svg" alt="Logo" title="Python" class="skills_code_pic_active">
+            </div>
+            <div class="skills_code_box">
+                <div class="skills_bar_number"></div>
+                <div class="skills_bar"><div class="skills_bar_on"></div></div>
+            </div>
+            <div class="skills_code_box">
+                <img src="pics/c++.svg" alt="Logo" title="C++" class="skills_code_pic_active">
+            </div>
+            <div class="skills_code_box">
+                <div class="skills_bar_number"></div>
+                <div class="skills_bar"><div class="skills_bar_on"></div></div>
+            </div>
+            <div class="skills_code_box">
+                <img src="pics/html.svg" alt="Logo" title="HTML" class="skills_code_pic_active">
+            </div>
+            <div class="skills_code_box">
+                <div class="skills_bar_number"></div>
+                <div class="skills_bar"><div class="skills_bar_on"></div></div>
+            </div>
+            <div class="skills_code_box">
+                <img src="pics/css.svg" alt="Logo" title="CSS" class="skills_code_pic_active">
+            </div>
+            <div class="skills_code_box">
+                <div class="skills_bar_number"></div>
+                <div class="skills_bar"><div class="skills_bar_on"></div></div>
+            </div>
+            <div class="skills_code_box">
+                <img src="pics/javascript.svg" alt="Logo" title="JavaScript" class="skills_code_pic_active">
+            </div>           
+            <div class="skills_code_box">
+                <div class="skills_bar_number"></div>
+                <div class="skills_bar"><div class="skills_bar_on"></div></div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <div class="skills_container body skills_opp" onclick="skillsopen(2)">
+        <div class="skills_picbox">
+            <div class="skills_pictext">Design</div>
+            <div class="skills_pic_container">
+                <img src="pics/sccologo.png" alt="Logo" class="skills_pic">
+                <img src="pics/actclogo.png" alt="Logo" class="skills_pic">
+            </div>
+            <div class="skills_bottomtext">Click to Expand</div>
+        </div>
+        <p class="skills_textbox">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi hic necessitatibus architecto, commodi nobis in! Et, sunt animi ea saepe magni magnam nam vero, laudantium tenetur a recusandae amet aperiam.
+        </p>
+    </div>
+
+    <div class="skills_picbox_active">
+        <div class="skills_pictext_active">Design</div>
+        <div class="skills_pic_active_container">
+            <img src="pics/sccologo.png" title="SCSS Chinese Orchestra Logo" alt="Logo" class="skills_design_pic_active">
+            <img src="pics/actclogo.png" title="ACJC Technology Council Logo" alt="Logo" class="skills_design_pic_active">
+        </div>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <div class="skills_container body" onclick="skillsopen(3)">
+        <div class="skills_picbox">
+            <div class="skills_pictext">Something</div>
+            <div class="skills_pic_container">
+
+            </div>
+            <div class="skills_bottomtext">Click to Expand</div>
+        </div>
+        <p class="skills_textbox">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi hic necessitatibus architecto, commodi nobis in! Et, sunt animi ea saepe magni magnam nam vero, laudantium tenetur a recusandae amet aperiam.
+        </p>
+    </div>
+
+    <div class="skills_picbox_active">
+        <div class="skills_pictext_active">Something</div>
+    </div>
+
+
+
+    <div>
+        <div class="head2_line"></div>
+        <div id="contacts" class="head2">Contacts</div>
+    </div>
+
+    <div class="form_container body">
+        <input type="text" id="name" name="name" placeholder="Your Name" class="form_name" autocomplete="off">
+        <input type="email" id="email" name="email" placeholder="Your Email" class="form_email" autocomplete="off">
+        <textarea id="comment" name="comment" placeholder="Your Comments" class="form_comment"></textarea>
+        <div id="form_button" onclick="submit_form()">
+            <div id="submit_text">Submit</div>
+            <img src="pics/plane.svg" alt="Logo" id="submit_pic">
+        </div>    
+    </div>
+
+    <div class="contacts_container body">
+        <a href="mailto:someone@example.com" target="_blank">
+            <div class="contacts_box">
+                <img src="pics/email.svg" title="Email" alt="Logo" class="logo">
+            </div>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+            <div class="contacts_box">
+                <img src="pics/insta.png" title="Instagram" alt="Logo" class="logo">
+            </div>
+        </a>
+        <a href="https://sg.linkedin.com/" target="_blank">
+            <div class="contacts_box">
+                <img src="pics/linkedin.png" title="LinkedIn" alt="Logo" class="logo">
+            </div>
+        </a>
+        <a href="https://github.com/" target="_blank">
+            <div class="contacts_box">
+                <img src="pics/github.png" title="Github" alt="Logo" class="logo">
+            </div>
+        </a>
+    </div>
+
+
+
+    <div class="footer_container">
+        <div class="footer_box">
+            <p style="font-size: 80%;">Copyright © 2022 | Chen Ling Song</p>
+        </div>
+    </div>
+
+<script src="web.js"></script>
+    
+</body>
+
+</html>
